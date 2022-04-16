@@ -1,0 +1,90 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vip\":true",
+      "matchValue" : "\"vip\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"expireTime\":9999999999999",
+      "matchValue" : "\"expireTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"ME\":\"已开通\"",
+      "matchValue" : "\"ME\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"VIP_CARD\":\"已开通\"",
+      "matchValue" : "\"VIP_CARD\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"payUser\":true",
+      "matchValue" : "\"payUser\":\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"name\":\"阿甘科技\"",
+      "matchValue" : "\"name\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "小猿搜题VIP",
+  "description" : "阿甘科技",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "xyst.yuanfudao.com",
+      "path" : "\/solar-vip\/iphone\/users\/555796595"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "www.yuanfudao.com",
+      "path" : "\/tutor-student-app\/iphone\/app-configs\/user-property-default-config"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "xyst.yuanfudao.com",
+      "path" : "\/solar-vip\/api\/users\/self"
+    }
+  ]
+}
