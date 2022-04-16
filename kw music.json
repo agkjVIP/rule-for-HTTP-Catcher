@@ -1,0 +1,45 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vipmExpire\":\"2345678900000\"",
+      "matchValue" : "vipmExpire\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vipLuxuryExpire\":\"2580234603200\"\n",
+      "matchValue" : "\"vipLuxuryExpire\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"vipExpire\":\"2580234603200\"",
+      "matchValue" : "\"vipExpire\":\".*?\"",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : false,
+  "name" : "酷我解锁",
+  "description" : "阿甘科技",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "",
+      "host" : "vip1.kuwo.cn",
+      "path" : "\/vip\/v2\/user\/vip"
+    }
+  ]
+}
